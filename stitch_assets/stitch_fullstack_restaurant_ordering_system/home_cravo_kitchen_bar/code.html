@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#e7eeff",
+          "on-surface-variant": "#5a4138",
+          "on-background": "#111c2d",
+          "surface-variant": "#d8e3fb",
+          "on-primary-container": "#fffbff",
+          "on-secondary-fixed": "#2a1700",
+          "inverse-primary": "#ffb599",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#f0f3ff",
+          "on-tertiary-container": "#f4fffc",
+          "tertiary-fixed-dim": "#6bd8cb",
+          "secondary-fixed": "#ffddb8",
+          "inverse-surface": "#263143",
+          "primary-container": "#cc4900",
+          "on-tertiary-fixed": "#00201d",
+          "on-primary": "#ffffff",
+          "tertiary-container": "#008378",
+          "on-primary-fixed-variant": "#7f2b00",
+          "surface-tint": "#a73a00",
+          "secondary": "#855300",
+          "outline-variant": "#e2bfb2",
+          "background": "#f9f9ff",
+          "on-error-container": "#93000a",
+          "on-secondary-fixed-variant": "#653e00",
+          "on-tertiary": "#ffffff",
+          "surface": "#f9f9ff",
+          "tertiary": "#00685f",
+          "on-primary-fixed": "#370e00",
+          "on-tertiary-fixed-variant": "#005049",
+          "primary-fixed": "#ffdbce",
+          "surface-container-highest": "#d8e3fb",
+          "tertiary-fixed": "#89f5e7",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary": "#a33900",
+          "secondary-container": "#fea619",
+          "on-surface": "#111c2d",
+          "surface-bright": "#f9f9ff",
+          "on-secondary-container": "#684000",
+          "error": "#ba1a1a",
+          "secondary-fixed-dim": "#ffb95f",
+          "surface-dim": "#cfdaf2",
+          "inverse-on-surface": "#ecf1ff",
+          "primary-fixed-dim": "#ffb599",
+          "surface-container-high": "#dee8ff",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#8e7166"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2.5rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Epilogue"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Epilogue"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Epilogue"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Epilogue"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Epilogue"
+          ],
+          "headline-md": [
+            "Epilogue"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Cravo Restaurant Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UO7v_NJBgfoioDdXuHPPjHZogl-QvPFbAmAW29-nqs6yLV1HPMAQKx-Pj6dnCsBoJuF2uBYMgVcYIDkfQkPRWSDJ-qAovrBgdDhkFtq9gdxBYPStzH3uqNwJvgSzSRJe_UjUkDOpGsQgggiwTQ0IC8bkewARzerz7uWE-zIejAAb-fPOWSM4sY37Xydh4EWOzeG44T2jsxwhNmiXK1nrnFXzhHPyI9ciXtQlyRZDCrTR4582prvc9HPgZC"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">Cravo</span></a><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="menu" href="#">Menu</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="about-us" href="#">About Us</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex items-center gap-space-md flex-1 max-w-xs md:max-w-sm hidden sm:flex mx-space-sm"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-title-md pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline rounded-lg border border-outline-variant/60 focus:outline-none focus:border-primary transition-colors" placeholder="Search dishes, wine, bites..." type="search"/></div></div><div class="flex items-center gap-space-sm md:gap-space-md"><a class="relative flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant rounded-lg border border-outline-variant/50 transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-title-md text-primary">shopping_bag</span><span class="hidden md:inline font-label-sm text-label-sm text-on-surface font-semibold">3 items</span><span class="absolute -top-1.5 -right-1.5 w-5 h-5 flex items-center justify-center bg-primary text-on-primary font-label-sm text-label-sm rounded-full">3</span></a><a class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface border border-outline-variant/40 transition-colors" data-path="admin-portal" href="#"><span class="material-symbols-outlined text-title-md text-outline">admin_panel_settings</span><span>Admin Portal</span><span class="px-space-xs py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded">Staff</span></a><div class="flex items-center pl-space-xs border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1yrAi8STZsMorT2RfJGRic9Da9gJ8TQlG0UbeoQBKKHVspaju5tsRPpKLUdRpCX-tS2Q9jiioHSpEXloRxSSL-eILDYb-PRjznQEaLbyRU_yPFSgWRQ6JxmX5-goAkUN3zhgquKiv8Y1OOEsiOWtO1b8jqqxGYWVCcVsqBHaNa4R0YG2Urc27YpC4eDCCvZU3k0J_8fQ7dgu_vOqJePnLJxbRJbBH5juAYDz7i9UCwZdKN18_2P9JfA"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full bg-surface-container-low overflow-hidden py-12 md:py-20 lg:py-24">
+<!-- Ambient subtle background glow accents -->
+<div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-20 w-80 h-80 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Text & Action Area -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<!-- Highlight Micro-Pill -->
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-sm text-primary">
+<span class="material-symbols-outlined text-title-md" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Free 30-min delivery on orders over $35</span>
+</div>
+<!-- Bold Tagline -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+            Delicious Food, Delivered <span class="text-primary italic font-serif">Fresh</span> to Your Door
+          </h1>
+<!-- Supporting Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Handcrafted gourmet burgers, wood-fired artisan pizza, crispy golden chicken, and refreshing drinks crafted daily with locally sourced ingredients.
+          </p>
+<!-- Primary & Secondary CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-container transition-all hover:shadow-lg active:scale-95" data-path="menu" href="#">
+<span>Order Now</span>
+<span class="material-symbols-outlined text-title-md">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-semibold shadow-sm hover:bg-surface-container transition-all active:scale-95" href="#categories">
+<span class="material-symbols-outlined text-title-md text-on-surface-variant">restaurant_menu</span>
+<span>Explore Menu</span>
+</a>
+</div>
+<!-- Social Proof & Trust Strip -->
+<div class="flex items-center gap-6 pt-4">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(1,400+ reviews)</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/40"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">eco</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">100% Farm Fresh Local</span>
+</div>
+</div>
+</div>
+<!-- Hero Showcase Visual Composition -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Gourmet double smashed beef cheeseburger with crisp artisan lettuce, melted aged cheddar, heirloom tomatoes, and caramelized onions on toasted brioche bun, presented on a warm rustic slate board with rosemary sprigs and fresh dipping sauce under soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCva6WRiYR0t5UoW5lqPX5wEulrStcbOIjb4HE1qJYZ7RHVQ4Q7Q1qECKOSpCaQ-Qubot5ujtNpfnmLPnijZe2NT6thpVYvAr8P2FBHBb9OFP1LyS2EQTtq684ClWckTL5XpIt6fx83_zMzCM1MYz-_mqA9OuETJhsU_OipZ__c1UKISewQmyKYDImFmGMkwUyQ6ba-_U8I-Wb2TZUETXEahjocVAWJqAFaUUp16MyRkw7LFMGpUCJ3TA"/>
+<!-- Atmospheric Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
+<!-- Overlaid Live Order Flash Badge -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div>
+<p class="font-title-md text-title-md font-bold text-on-surface">Chef's Signature Smash</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prepared hot in 12 mins • Angus Prime</p>
+</div>
+</div>
+<span class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-title-md text-title-md font-bold">$14.99</span>
+</div>
+</div>
+<!-- Floating Badge Top Right -->
+<div class="absolute -top-4 -right-4 bg-tertiary text-on-tertiary px-4 py-2.5 rounded-2xl shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-title-md">schedule</span>
+<span class="font-label-md text-label-md font-semibold">25–35 Min Express Delivery</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- POPULAR FOOD CATEGORIES SELECTOR -->
+<section class="w-full py-16 bg-surface" id="categories">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Curated Menus</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Explore Popular Categories</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Discover comforting craveables, wood-fired classics, and artisanal refreshments tailored for quick delivery.
+        </p>
+</div>
+<!-- Categories Pills / Interactive Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+<!-- Burgers (Active State) -->
+<button class="flex flex-col items-center justify-center p-5 rounded-2xl bg-primary text-on-primary shadow-md transition-all hover:shadow-lg text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">lunch_dining</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Burgers</span>
+<span class="font-label-sm text-label-sm text-white/80 mt-1">14 Options</span>
+</button>
+<!-- Pizza -->
+<button class="flex flex-col items-center justify-center p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm transition-all hover:shadow-md text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center mb-3 group-hover:scale-110 transition-transform text-primary">
+<span class="material-symbols-outlined text-3xl">local_pizza</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Pizza</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">11 Options</span>
+</button>
+<!-- Chicken -->
+<button class="flex flex-col items-center justify-center p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm transition-all hover:shadow-md text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center mb-3 group-hover:scale-110 transition-transform text-primary">
+<span class="material-symbols-outlined text-3xl">kebab_dining</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Chicken</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">9 Options</span>
+</button>
+<!-- Snacks & Sides -->
+<button class="flex flex-col items-center justify-center p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm transition-all hover:shadow-md text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center mb-3 group-hover:scale-110 transition-transform text-primary">
+<span class="material-symbols-outlined text-3xl">fastfood</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Snacks &amp; Sides</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">16 Options</span>
+</button>
+<!-- Drinks -->
+<button class="flex flex-col items-center justify-center p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm transition-all hover:shadow-md text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center mb-3 group-hover:scale-110 transition-transform text-primary">
+<span class="material-symbols-outlined text-3xl">local_bar</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Drinks</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">12 Options</span>
+</button>
+<!-- Desserts -->
+<button class="flex flex-col items-center justify-center p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface shadow-sm transition-all hover:shadow-md text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center mb-3 group-hover:scale-110 transition-transform text-primary">
+<span class="material-symbols-outlined text-3xl">icecream</span>
+</div>
+<span class="font-title-md text-title-md font-bold">Desserts</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">8 Options</span>
+</button>
+</div>
+</div>
+</section>
+<!-- POPULAR / BEST SELLERS FOOD GRID -->
+<section class="w-full py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-12">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Cravo Specialties</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Customer Favorites</h2>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg font-bold text-primary hover:text-primary-container transition-colors" data-path="menu" href="#">
+<span>View All 50+ Dishes</span>
+<span class="material-symbols-outlined text-title-md">chevron_right</span>
+</a>
+</div>
+<!-- Food Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Item 1: Truffle Smash Double Burger -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Double beef patty truffle smash burger oozing melted gruyere cheese, black truffle aioli, crisp arugula, caramelized shallots, close-up delicious food photography on clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNGDy3Wi3lzjkiaXKzkaFI41EWrIzs1lsQ-dcClN-h4Raz7gChmIOFdgRcna4M3nR3xWtnnE3N3lGnEeH4dBZABp6AlpyUnlPOwYm42JZvnRLUWdi43mKya0N61rpfsfMSnqcTH8AK_gmHZH98Bs5qEdCwA5uB6N5DeiSax1j9IOBDqycchGkbeyyOaOiXzfymnB_YUeNCgV_u7pI_K5ZE53nh9rXTQIc2__dOMQy5kgxGEJt4Fjigpw"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                Chef's Pick
+              </span>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">850 kcal • Gourmet</span>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer text-lg">favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface line-clamp-1">Truffle Smash Double Burger</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+              Dual Angus smashed patties, aged alpine gruyere, black winter truffle aioli, and glazed brioche bun.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$14.99</span>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow hover:bg-primary-container transition-all active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Wood-Fired Margherita Pizza -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal Neapolitan wood-fired Margherita pizza with blistered charred crust, melted San Marzano tomato sauce, fresh buffalo mozzarella pearls, fresh basil leaves, warm golden lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhUXvWXP5B14Lwr627gzqCh2VBmXr3fJRVVASqBR3wJWMv6zhJ4gQccVOwywTUlNfhYH2Q1yp-A_E9eTmJwkjil5XIIvhgcEP0tEHDAEWHOLW1ZH30e_mOni6RsZsgRCA3rCPlywYRI0b4mcf51H28TtvRzrKo7XMa7goL-0RV-8Uo_OZsZ05aTAghwncGVR-Iui-FuHfVJZnzisr5u1BDWNFOJ3YoGTtroiCvuNTho-8J0BlbthoXPA"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                Vegetarian
+              </span>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8</span>
+</div>
+</div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">720 kcal • 12 Inch</span>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer text-lg">favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface line-clamp-1">Wood-Fired Margherita Pizza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+              San Marzano reduction, creamy fior di latte mozzarella, fresh picked organic basil, and EVOO drizzle.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$16.50</span>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow hover:bg-primary-container transition-all active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Crispy Nashville Hot Chicken Basket -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden crisp deep fried spicy Nashville hot chicken tenders served in parchment basket with house dill pickles and creamy dipping sauce, cinematic culinary photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIk-bofqQGFxnNYlk6YS5LCjWwDkC5aQ0CFeo3cWJ-ZX-bX_QK-3EwuMZTwtFY9NPmd4_Ta9d4oT_6y3cFzNpL_B-Z6Obnu9eVgXVo0qfky5VLxjnb5egSnB9fd95D8FdDMSxi_qakv3nd-agtgJ2J2-4Bzeel2cvsTAUPNJ45rvbD2LKUVU9ECqP1hcAA4ER2hOBQYmoNLjvUDmugoXUjySYHDIZDTkiZwBqO9kRoXahIe1fx-qVkkA"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                Spicy Heat
+              </span>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">920 kcal • House Rub</span>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer text-lg">favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface line-clamp-1">Nashville Hot Chicken Basket</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+              Buttermilk-brined tenderloins fried golden with cayenne-brown sugar glaze and sweet garlic pickles.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$13.25</span>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow hover:bg-primary-container transition-all active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Loaded Truffle Herb Fries -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hand-cut crispy golden french fries tossed in aromatic white truffle oil, grated aged parmesan cheese, fresh chopped rosemary and flat parsley, served in ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiJhDX6nipio-oacBfBpIg1W89J0kSNUsVbUNNNHxrmDgzV8gYv_EGU9QGtTQvQEE69WhCncsbAs4_-2FuXiJ-6BOMcqvFbignD2lFHRPi7-FmSZDGKbHRfXQ_4RsbxRTl-hUEaZ3AYxK9WeQtb0OfqpWXUV6YuEhHCMbeogMnWzPSpvrh3f4mjpEAniCDYuYFY4FPeE5PmpN8CW8GM5DNs9NCvwOvUGlKeGBVFP0MuyubeT-EZPDF0Q"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold shadow-sm">
+                Bestseller Side
+              </span>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-sm font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7</span>
+</div>
+</div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">480 kcal • Shareable</span>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer text-lg">favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface line-clamp-1">Loaded Truffle Herb Fries</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2">
+              Double-cooked Idaho potatoes tossed with white truffle oil, shaved 24-month parmesan, and wild garden rosemary.
+            </p>
+</div>
+<div class="pt-4 mt-4 flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$7.95</span>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow hover:bg-primary-container transition-all active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SPECIAL CHEF'S OFFER / PROMO BANNER -->
+<section class="w-full py-12 bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="relative rounded-3xl bg-inverse-surface text-inverse-on-surface overflow-hidden p-8 md:p-12 lg:p-16 shadow-xl">
+<!-- Ambient decorative shapes -->
+<div class="absolute top-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold self-start uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">local_activity</span>
+<span>Limited Time Celebration</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-inverse-on-surface tracking-tight">
+              Weekend Feast: 20% Off All Family Bundles
+            </h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/80 max-w-2xl">
+              Elevate your weekend gathering with chef-curated sharing platters: 4 artisanal burgers or 2 large pizzas, loaded sides, house dips, and craft refreshments.
+            </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<div class="flex items-center gap-2 bg-surface-container-lowest/10 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/10">
+<span class="font-label-md text-label-md text-inverse-on-surface/70">Promo Code:</span>
+<span class="font-headline-sm text-headline-sm font-mono font-bold text-secondary-fixed">FEAST20</span>
+</div>
+<button class="px-6 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow hover:bg-primary-container transition-all active:scale-95 cursor-pointer">
+                Claim Offer Now
+              </button>
+</div>
+</div>
+<div class="lg:col-span-4 flex justify-center lg:justify-end">
+<div class="w-full max-w-xs aspect-square rounded-2xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Plentiful weekend dining table loaded with craft burgers, golden fries baskets, artisan dips, wood-fired pizza slices, and craft sodas, high energy warm restaurant mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb8-orvhFkuhtzY6YAEkt9okarDz8ahCzXL4DQiqBh2Eaua02kdWa37rKSFxORBxj_iHyFGmJ0W28l4FKFb2OaW3N1A0glu4Y0BUDzINVP7pvDJwDuqB3NBCeSzl8-vDXS8oBSWqcIpriQbByK3WwNFn6Dpv9UyZ-GaVpjMBVlhBpPmxwXpTc0eOJZ5dlPGnR0qJKpNDyxcA2CzPr3ep_gvli1TyYty6sO14jlgc4PKrGGZ984h7TDRA"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT US / CHEF PHILOSOPHY & STATS -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Visual Story Column -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Passionate professional chef in modern minimalist kitchen delicately finishing a gourmet dish with fresh garden microgreens and tweezers, warm ambient kitchen glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHr2-zW0DePQdxM1Oi9XOzn0AKyU795Dtb6mKkzmMiGAgKHOUpdA0-HaGR3rXtIob0a7y_fUQJ3rmOUj2CpnecsyrGVYIGsv0u3TsoBuQuGKXL6a-oq0Nlt004hKPUfE0dA1ARsOaViWAWntORCDFwZNFVH0RQtl-TKeKfnVdn26CsIv3lWQ-OA-nPTzzlamf6RHI01JpIPf0W6anBBmq9o6pg2jUV-kbv9oCRseM96k9V2oEADjLT9w"/>
+</div>
+<!-- Floating Farm to Table Badge -->
+<div class="absolute -bottom-6 -right-4 md:right-8 bg-surface-container-lowest p-4 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-2xl">spa</span>
+</div>
+<div>
+<p class="font-title-md text-title-md font-bold text-on-surface">Farm-to-Table</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily Hudson Valley harvest</p>
+</div>
+</div>
+</div>
+<!-- Content Column -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Our Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Crafted with Intent, Served with Soul
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            At Cravo Kitchen &amp; Bar, we believe honest food sparks spontaneous joy. Every brioche bun is baked at dawn, our sauces are simmered from scratch, and our produce comes straight from family growers within 50 miles.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Whether you are sitting at our polished timber bar or opening a piping-hot delivery box in your living room, the culinary standard remains unapologetically uncompromising.
+          </p>
+<!-- Clean Stats Grid -->
+<div class="grid grid-cols-3 gap-6 pt-4">
+<div class="flex flex-col">
+<span class="font-display-hero text-headline-lg font-bold text-primary">15+</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Years Crafting</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Culinary mastery</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-hero text-headline-lg font-bold text-primary">100%</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Organic Greens</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Local partnerships</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-hero text-headline-lg font-bold text-primary">35k+</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Happy Foodies</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Community loved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK CONTACT TEASER & NEWSLETTER SIGNUP -->
+<section class="w-full py-16 bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-surface-container rounded-3xl p-8 lg:p-12 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-6 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-title-md">mail</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Stay Connected</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">
+              Join the Cravo VIP Dining Club
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Get secret chef specials, early weekend table reservations, and an instant $10 off your first online delivery order.
+            </p>
+</div>
+<div class="lg:col-span-6">
+<form class="flex flex-col sm:flex-row items-center gap-3" onsubmit="event.preventDefault();">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-title-md">alternate_email</span>
+<input class="w-full h-12 pl-11 pr-4 rounded-xl bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Enter your email address..." required="" type="email"/>
+</div>
+<button class="w-full sm:w-auto h-12 px-8 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold whitespace-nowrap shadow hover:bg-primary-container transition-all active:scale-95 cursor-pointer" type="submit">
+                Subscribe
+              </button>
+</form>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-2 text-center sm:text-left">
+              No spam, ever. Unsubscribe with a single click anytime.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-space-xl"><div class="w-full px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Cravo Restaurant Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UO7v_NJBgfoioDdXuHPPjHZogl-QvPFbAmAW29-nqs6yLV1HPMAQKx-Pj6dnCsBoJuF2uBYMgVcYIDkfQkPRWSDJ-qAovrBgdDhkFtq9gdxBYPStzH3uqNwJvgSzSRJe_UjUkDOpGsQgggiwTQ0IC8bkewARzerz7uWE-zIejAAb-fPOWSM4sY37Xydh4EWOzeG44T2jsxwhNmiXK1nrnFXzhHPyI9ciXtQlyRZDCrTR4582prvc9HPgZC"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">Cravo</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Modern kitchen and bar dedicated to honest ingredients, thoughtful preparations, and sensory dining experiences.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">location_on</span><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">call</span><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">mail</span><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">public</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface">Quick Links</h4><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="home" href="#">Home Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#">A La Carte Menu</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">Our Story &amp; Team</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Reservations &amp; Inquiries</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-portal" href="#">Staff Portal</a></nav></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface">Service Hours</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="flex justify-between max-w-xs"><span class="text-on-surface font-semibold">Tue – Thu:</span><span>11:30 AM – 10:00 PM</span></li><li class="flex justify-between max-w-xs"><span class="text-on-surface font-semibold">Fri – Sat:</span><span>11:30 AM – 11:30 PM</span></li><li class="flex justify-between max-w-xs"><span class="text-on-surface font-semibold">Sunday:</span><span>10:30 AM – 9:00 PM</span></li><li class="flex justify-between max-w-xs"><span class="text-outline font-semibold">Monday:</span><span class="text-outline">Closed (Private Events)</span></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface">Visit Cravo</h4><p class="font-body-sm text-body-sm text-on-surface-variant">482 Artisan Boulevard, Suite 100<br/>Culinary Arts District, NY 10012</p><p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><span class="font-semibold text-on-surface">Direct Line:</span> (212) 555-0194<br/><span class="font-semibold text-on-surface">Table Concierge:</span> reservations@cravo.com</p></div></div><div class="mt-space-xl pt-space-md border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Cravo Kitchen &amp; Bar. All rights reserved.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Hospitality</a><a class="hover:text-on-surface transition-colors" href="#">Dietary Information</a></div></div></div></footer></body></html>

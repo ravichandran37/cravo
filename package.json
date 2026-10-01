@@ -1,0 +1,23 @@
+{
+  "name": "cravo-fullstack-restaurant",
+  "version": "1.0.0",
+  "description": "Fullstack Restaurant Ordering System for Cravo Kitchen & Bar",
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm start",
+    "build:client": "cd client && npm run build",
+    "db:init": "cd server && npm run db:init"
+  },
+  "keywords": [
+    "restaurant",
+    "food-ordering",
+    "react",
+    "vite",
+    "express",
+    "mysql",
+    "stitch-ai"
+  ],
+  "author": "",
+  "license": "ISC"
+}

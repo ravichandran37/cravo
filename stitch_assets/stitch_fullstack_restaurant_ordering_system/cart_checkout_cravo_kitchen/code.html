@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#e7eeff",
+          "on-surface-variant": "#5a4138",
+          "on-background": "#111c2d",
+          "surface-variant": "#d8e3fb",
+          "on-primary-container": "#fffbff",
+          "on-secondary-fixed": "#2a1700",
+          "inverse-primary": "#ffb599",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#f0f3ff",
+          "on-tertiary-container": "#f4fffc",
+          "tertiary-fixed-dim": "#6bd8cb",
+          "secondary-fixed": "#ffddb8",
+          "inverse-surface": "#263143",
+          "primary-container": "#cc4900",
+          "on-tertiary-fixed": "#00201d",
+          "on-primary": "#ffffff",
+          "tertiary-container": "#008378",
+          "on-primary-fixed-variant": "#7f2b00",
+          "surface-tint": "#a73a00",
+          "secondary": "#855300",
+          "outline-variant": "#e2bfb2",
+          "background": "#f9f9ff",
+          "on-error-container": "#93000a",
+          "on-secondary-fixed-variant": "#653e00",
+          "on-tertiary": "#ffffff",
+          "surface": "#f9f9ff",
+          "tertiary": "#00685f",
+          "on-primary-fixed": "#370e00",
+          "on-tertiary-fixed-variant": "#005049",
+          "primary-fixed": "#ffdbce",
+          "surface-container-highest": "#d8e3fb",
+          "tertiary-fixed": "#89f5e7",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary": "#a33900",
+          "secondary-container": "#fea619",
+          "on-surface": "#111c2d",
+          "surface-bright": "#f9f9ff",
+          "on-secondary-container": "#684000",
+          "error": "#ba1a1a",
+          "secondary-fixed-dim": "#ffb95f",
+          "surface-dim": "#cfdaf2",
+          "inverse-on-surface": "#ecf1ff",
+          "primary-fixed-dim": "#ffb599",
+          "surface-container-high": "#dee8ff",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#8e7166"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2.5rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Epilogue"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Epilogue"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Epilogue"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Epilogue"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Epilogue"
+          ],
+          "headline-md": [
+            "Epilogue"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Cravo Restaurant Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UO7v_NJBgfoioDdXuHPPjHZogl-QvPFbAmAW29-nqs6yLV1HPMAQKx-Pj6dnCsBoJuF2uBYMgVcYIDkfQkPRWSDJ-qAovrBgdDhkFtq9gdxBYPStzH3uqNwJvgSzSRJe_UjUkDOpGsQgggiwTQ0IC8bkewARzerz7uWE-zIejAAb-fPOWSM4sY37Xydh4EWOzeG44T2jsxwhNmiXK1nrnFXzhHPyI9ciXtQlyRZDCrTR4582prvc9HPgZC"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">Cravo</span></a><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="menu" href="#">Menu</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="about-us" href="#">About Us</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex items-center gap-space-md flex-1 max-w-xs md:max-w-sm hidden sm:flex mx-space-sm"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-title-md pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline rounded-lg border border-outline-variant/60 focus:outline-none focus:border-primary transition-colors" placeholder="Search dishes, wine, bites..." type="search"/></div></div><div class="flex items-center gap-space-sm md:gap-space-md"><a class="relative flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant rounded-lg border border-outline-variant/50 transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-title-md text-primary">shopping_bag</span><span class="hidden md:inline font-label-sm text-label-sm text-on-surface font-semibold">3 items</span><span class="absolute -top-1.5 -right-1.5 w-5 h-5 flex items-center justify-center bg-primary text-on-primary font-label-sm text-label-sm rounded-full">3</span></a><a class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface border border-outline-variant/40 transition-colors" data-path="admin-portal" href="#"><span class="material-symbols-outlined text-title-md text-outline">admin_panel_settings</span><span>Admin Portal</span><span class="px-space-xs py-0.5 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded">Staff</span></a><div class="flex items-center pl-space-xs border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1yrAi8STZsMorT2RfJGRic9Da9gJ8TQlG0UbeoQBKKHVspaju5tsRPpKLUdRpCX-tS2Q9jiioHSpEXloRxSSL-eILDYb-PRjznQEaLbyRU_yPFSgWRQ6JxmX5-goAkUN3zhgquKiv8Y1OOEsiOWtO1b8jqqxGYWVCcVsqBHaNa4R0YG2Urc27YpC4eDCCvZU3k0J_8fQ7dgu_vOqJePnLJxbRJbBH5juAYDz7i9UCwZdKN18_2P9JfA"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Progress Stepper Header -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-md">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-y-space-sm">
+<!-- Step 1: Active -->
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md shadow-sm">
+              1
+            </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">1. Review Cart</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Gourmet items selected</span>
+</div>
+</div>
+<div class="hidden sm:block flex-1 max-w-[80px] md:max-w-[120px] h-0.5 bg-primary/30 mx-space-sm rounded-full"></div>
+<!-- Step 2 -->
+<div class="flex items-center gap-space-sm opacity-60">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              2
+            </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">2. Delivery Details</span>
+<span class="font-label-sm text-label-sm text-outline">Address &amp; Notes</span>
+</div>
+</div>
+<div class="hidden sm:block flex-1 max-w-[80px] md:max-w-[120px] h-0.5 bg-surface-container mx-space-sm rounded-full"></div>
+<!-- Step 3 -->
+<div class="flex items-center gap-space-sm opacity-50">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              3
+            </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">3. Payment</span>
+<span class="font-label-sm text-label-sm text-outline">Card, Apple Pay</span>
+</div>
+</div>
+<div class="hidden md:block flex-1 max-w-[80px] md:max-w-[120px] h-0.5 bg-surface-container mx-space-sm rounded-full"></div>
+<!-- Step 4 -->
+<div class="hidden md:flex items-center gap-space-sm opacity-40">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              4
+            </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">4. Confirmation</span>
+<span class="font-label-sm text-label-sm text-outline">Live Tracking</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Cart Content Grid -->
+<section class="w-full px-margin-mobile lg:px-margin pb-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Cart Items & Customization (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Cart Table Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface">Your Dining Bag</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">(4 dishes)</span>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-primary-container transition-colors" data-path="menu" href="#">
+<span class="material-symbols-outlined text-title-md">restaurant_menu</span>
+<span>Add more dishes</span>
+</a>
+</div>
+<!-- Items Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Item 1: Truffle Double Burger -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0 shadow-sm" data-alt="A decadent double smashed beef burger with bubbling sharp cheddar, earthy black truffle aioli, crisp arugula, inside a glazed brioche bun, shot in warm studio lighting with soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRZ1Og6OsGaRr014wnKAo72bR_LBnQLV6cdy2K9Nj9MHEP8RlXL-WQTRHX6qklHQiFTZ-ZNWlNuuG-3tTLWCV-KFWqs_FrTCbE2EWph184U1ijm_d5H3KgIaUrIx5U1fvi8OujqUdzUaEjfczvH0MGmwvv-ikC6g0uco27cBRnXUFVW9lzff1tWj_GKrcyDW0D3TfWC1PB84oFVK4z0RPof6L3iRrP08UbF8qui-QMhzhsCAO6tL4pQg"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Chef's Signature</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold truncate pt-1">Signature Truffle Double Burger</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Toasted Brioche • Smoked Applewood Bacon (+$2.00) • Medium Rare</p>
+<span class="font-label-md text-label-md text-outline pt-0.5">$16.99 each</span>
+</div>
+</div>
+<!-- Controls & Total -->
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-space-lg flex-shrink-0">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg font-bold text-on-surface">2</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">add</span>
+</button>
+</div>
+<div class="text-right min-w-[70px]">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$33.98</span>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-error-container/40" type="button">
+<span class="material-symbols-outlined text-title-md">delete_outline</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Neapolitan Margherita Pizza -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0 shadow-sm" data-alt="Traditional wood-fired Neapolitan Margherita pizza with charred blistered crust, rich San Marzano tomato sauce, fresh buffalo mozzarella, aromatic basil leaves and a drizzle of olive oil, appetizing close-up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV2X38d1ctb7fgNFMQ1qGtJL6DmQOKGIzQZI4ni3Git_vHSSxK4aUsUWODW7jFsOMdHJFfHgMPBxtLfwcrYhxhwcd6H7tI1btO568kMxVqy3yE5guXXv9YD1h0T2dCECvEfZ9E9HFTMKq38X9VPMsyWAayYqYzeMEseiZ9G9Rv4V0KAIPJW8yt3E51hRWV02h4zQSH3awvvOCXA4P46GN-bfDMua98hh46mZokxCUH9H4V7t8uWRp6bQ"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Vegetarian</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold truncate pt-1">Neapolitan Margherita Pizza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">48h Slow-Fermented Thin Crust • Fior Di Latte • Fresh Basil</p>
+<span class="font-label-md text-label-md text-outline pt-0.5">$15.99 each</span>
+</div>
+</div>
+<!-- Controls & Total -->
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-space-lg flex-shrink-0">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg font-bold text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">add</span>
+</button>
+</div>
+<div class="text-right min-w-[70px]">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$15.99</span>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-error-container/40" type="button">
+<span class="material-symbols-outlined text-title-md">delete_outline</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Truffle Herb Fries -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0 shadow-sm" data-alt="Crispy golden hand-cut fries seasoned with fresh rosemary and sea salt, served with grated parmesan and a side of garlic truffle aioli dipping sauce in a matte ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvARJSyHHVRdY--wiVkWCgJzyMg3m7IM6RpsdAT8b3CPxRV8LwoF-CPr1BhyGmIhheyPl2v7QZPbU_ugOLnssnFBwCZYGot0PxLNIrHhjBerWAQBATDSHx7yzWpdb52er-63or4vgQDkq7vO5v6LQsa1nJBpbhyb3P994BD0HPOccpylibwa8UqMwwOMuAgfQpGrmii3tupCjWaeOGHPP4T7Zp4yyWH8cZBSaykK9YeUKsBB_Y0X29Yw"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold truncate pt-1">Hand-cut Truffle Herb Fries</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Organic Russet Potatoes • Rosemary Aioli Dip</p>
+<span class="font-label-md text-label-md text-outline pt-0.5">$6.99 each</span>
+</div>
+</div>
+<!-- Controls & Total -->
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-space-lg flex-shrink-0">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg font-bold text-on-surface">2</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">add</span>
+</button>
+</div>
+<div class="text-right min-w-[70px]">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$13.98</span>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-error-container/40" type="button">
+<span class="material-symbols-outlined text-title-md">delete_outline</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Hibiscus Craft Iced Tea -->
+<div class="p-space-md rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0 shadow-sm" data-alt="Vibrant ruby-red iced hibiscus craft tea in a tall ribbed glass with clear ice cubes, fresh mint sprig and a dehydrated blood orange wheel garnish on a sunlit marble table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAukvJMuLvFkmqw9SChv9R8QoCcc0sL5lKLbN13vewMT27LhbgAIWaFNInQcfCngwOhepvrNz4qmJtmlawBdADPuYQsmzJBLAbuEEjdIRcNlg3_h25ieH7LxUCyOukj2wU2CjJKYlVgGnEkEdD1qW91FAFKMqNzHrNph2tNPJOLwYwceW1LSrsqAaep9TSrrsciGZi1lcrbEQk_uFdoGAL_6i3UAS-47NpQ6mS82TsQvqBPC_sedzDyfg"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold truncate pt-1">Fresh Hibiscus Craft Iced Tea</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Organic Botanicals • Valencia Orange • Light Agave</p>
+<span class="font-label-md text-label-md text-outline pt-0.5">$4.50 each</span>
+</div>
+</div>
+<!-- Controls & Total -->
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-space-lg flex-shrink-0">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg font-bold text-on-surface">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-title-md">add</span>
+</button>
+</div>
+<div class="text-right min-w-[70px]">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">$4.50</span>
+</div>
+<button aria-label="Remove item" class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-error-container/40" type="button">
+<span class="material-symbols-outlined text-title-md">delete_outline</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Preparation & Delivery Instructions Note Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs pb-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-title-md">notes</span>
+<label class="font-title-md text-title-md font-semibold" for="cooking-notes">Special Instructions for Kitchen &amp; Courier</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pb-space-sm">Have allergies, gate codes, or requests for extra sauces? Let our culinary crew know.</p>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none" id="cooking-notes" placeholder="Add special cooking instructions, gate entry code, or drop-off location note..." rows="3"></textarea>
+</div>
+<!-- Voucher Promo Code Input with Applied Badge -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex-1 w-full">
+<label class="block font-label-lg text-label-lg font-semibold text-on-surface mb-1" for="promo-code">Cravo Dining Perk or Gift Code</label>
+<div class="flex items-center gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-title-md pointer-events-none">sell</span>
+<input class="w-full h-11 pl-10 pr-space-md bg-surface-container-low font-title-md text-title-md font-bold text-on-surface rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="promo-code" type="text" value="CRAVO10"/>
+</div>
+<button class="h-11 px-space-lg bg-inverse-surface hover:bg-on-background text-inverse-on-surface font-label-md text-label-md rounded-lg transition-colors font-semibold flex items-center gap-1" type="button">
+<span>Applied</span>
+<span class="material-symbols-outlined text-title-md text-tertiary-fixed">check_circle</span>
+</button>
+</div>
+</div>
+<div class="sm:self-end flex items-center gap-space-xs px-space-md py-2 bg-tertiary-container/15 rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-title-md">local_offer</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-tertiary">-$5.00 Off Applied</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">First-order welcome gift</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Order Summary Card (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-24">
+<!-- Live Courier ETA Graphic Card -->
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-title-lg">moped</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Fast Courier</span>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">25 – 35 minutes</h4>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> Live Prep
+            </span>
+</div>
+<!-- Decorative Route Track SVG -->
+<div class="mt-3 pt-2">
+<svg class="w-full h-7 text-primary" fill="none" viewbox="0 0 280 28">
+<path class="opacity-40" d="M 10 14 Q 70 4, 140 14 T 270 14" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2.5"></path>
+<circle cx="10" cy="14" fill="currentColor" r="5"></circle>
+<circle cx="170" cy="14" fill="#fea619" r="6"></circle>
+<circle cx="270" cy="14" fill="#00685f" r="5"></circle>
+</svg>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Cravo Kitchen</span>
+<span class="font-semibold text-secondary">In Prep</span>
+<span>Your Doorstep</span>
+</div>
+</div>
+</div>
+<!-- Price Breakdown Receipt Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col gap-space-md">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Order Summary</h2>
+<div class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant">
+<div class="flex justify-between items-center">
+<span>Items Subtotal</span>
+<span class="font-semibold text-on-surface">$68.45</span>
+</div>
+<div class="flex justify-between items-center text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-title-md">high_res</span>
+                Perk (CRAVO10)
+              </span>
+<span class="font-bold">-$5.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-1">
+                Estimated Sales Tax (8.5%)
+                <span class="material-symbols-outlined text-body-sm text-outline cursor-help" title="Calculated according to culinary district regulations">info</span>
+</span>
+<span class="font-semibold text-on-surface">$5.39</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="flex items-center gap-1">
+                Delivery Fee
+                <span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Over $35</span>
+</span>
+<span class="font-bold text-tertiary">FREE</span>
+</div>
+<!-- Tonal divider -->
+<div class="w-full h-px bg-surface-container my-1"></div>
+<div class="flex justify-between items-baseline pt-1">
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">Total Amount</span>
+<span class="font-label-sm text-label-sm text-outline">Includes taxes &amp; fees</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-bold text-primary">$68.84</span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<button class="w-full py-space-sm px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-title-lg">lock</span>
+<span>Place Order • $68.84</span>
+</button>
+<!-- Safe & Secure Checkout Guarantee Badges -->
+<div class="flex flex-col gap-space-xs pt-space-xs items-center text-center">
+<div class="flex items-center justify-center gap-space-md text-outline">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-md text-tertiary">verified_user</span>
+<span>256-Bit SSL</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-md text-primary">eco</span>
+<span>Eco Packaging</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-body-md text-secondary">thumb_up</span>
+<span>Cravo Fresh</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-outline pt-1">
+              Guaranteed warm delivery within 45 mins or your next entrée is on us.
+            </p>
+</div>
+<!-- Back to Menu CTA -->
+<div class="pt-space-xs text-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1" data-path="menu" href="#">
+<span class="material-symbols-outlined text-body-md">arrow_back</span>
+<span>Continue exploring full menu</span>
+</a>
+</div>
+</div>
+<!-- Curated Sommelier Pairing Add-On Teaser -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-sm shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">wine_bar</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Pairing Suggestion</span>
+<span class="font-title-md text-title-md font-semibold text-on-surface truncate">Chianti Classico Riserva</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended with your pizza +$12</span>
+</div>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-bold rounded-lg shadow-sm transition-colors flex-shrink-0" type="button">
+            + Add
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-space-xl"><div class="w-full px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Cravo Restaurant Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UO7v_NJBgfoioDdXuHPPjHZogl-QvPFbAmAW29-nqs6yLV1HPMAQKx-Pj6dnCsBoJuF2uBYMgVcYIDkfQkPRWSDJ-qAovrBgdDhkFtq9gdxBYPStzH3uqNwJvgSzSRJe_UjUkDOpGsQgggiwTQ0IC8bkewARzerz7uWE-zIejAAb-fPOWSM4sY37Xydh4EWOzeG44T2jsxwhNmiXK1nrnFXzhHPyI9ciXtQlyRZDCrTR4582prvc9HPgZC"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">Cravo</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">Modern kitchen and bar dedicated to honest ingredients, thoughtful preparations, and sensory dining experiences.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">location_on</span><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">call</span><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">mail</span><span class="material-symbols-outlined text-title-md hover:text-primary cursor-pointer transition-colors">public</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface">Quick Links</h4><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#">A La Carte Menu</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">Our Story &amp; Team</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Reservations &amp; Inquiries</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="admin-portal" href="#">Staff Portal</a></nav></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface">Service Hours</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="flex justify-between max-w-xs"><span class="text-on-surface font-semibold">Tue – Thu:</span><span>11:30 AM – 10:00 PM</span></li><li class="flex justify-between max-w-xs"><span class="text-on-surface font-semibold">Fri – Sat:</span><span>11:30 AM – 11:30 PM</span></li><li class="flex justify-between max-w-xs"><span class="text-on-surface font-semibold">Sunday:</span><span>10:30 AM – 9:00 PM</span></li><li class="flex justify-between max-w-xs"><span class="text-outline font-semibold">Monday:</span><span class="text-outline">Closed (Private Events)</span></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-md text-title-md text-on-surface">Visit Cravo</h4><p class="font-body-sm text-body-sm text-on-surface-variant">482 Artisan Boulevard, Suite 100<br/>Culinary Arts District, NY 10012</p><p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs"><span class="font-semibold text-on-surface">Direct Line:</span> (212) 555-0194<br/><span class="font-semibold text-on-surface">Table Concierge:</span> reservations@cravo.com</p></div></div><div class="mt-space-xl pt-space-md border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Cravo Kitchen &amp; Bar. All rights reserved.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Hospitality</a><a class="hover:text-on-surface transition-colors" href="#">Dietary Information</a></div></div></div></footer></body></html>
